@@ -15,7 +15,7 @@ import java.util.Collection;
 /**
  * Servlet implementation class DelUserServlet
  */
-@WebServlet("/DelUserServlet")
+@WebServlet("/deluser")
 public class DelUserServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

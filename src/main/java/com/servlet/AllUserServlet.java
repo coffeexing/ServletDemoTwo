@@ -14,7 +14,7 @@ import java.util.Collection;
 /**
  * Servlet implementation class AllUserServlet
  */
-@WebServlet("/AllUserServlet")
+@WebServlet("/users")
 public class AllUserServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -36,7 +36,7 @@ public class AllUserServlet extends HttpServlet {
         Collection<User> users = userDao.getAllUsers();
         // Forward the request to users.jsp to render the list
         request.setAttribute("model", users);
-        System.out.println("11111111111111111111111");
+        System.out.println("AllUserServlet:doGet:users:"+users);
         request.getRequestDispatcher("users.jsp").forward(request, response);
 	}
 

@@ -13,7 +13,7 @@ import java.util.Collection;
 /**
  * Servlet implementation class ShowUserServlet
  */
-@WebServlet("/ShowUserServlet")
+@WebServlet("/showuser")
 public class ShowUserServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
